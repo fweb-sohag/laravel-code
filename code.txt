@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+file=>.htaccess
+
+Servier upload=>done
+
+created by id using model
+
+protected static function boot()
+    {
+        parent::boot();
+
+        Prodect::creating(function ($model) {
+            $model->created_by = auth()->id();
+        });
+    }
