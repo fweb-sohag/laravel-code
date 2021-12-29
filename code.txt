@@ -18,3 +18,5 @@ protected static function boot()
     }
 
 <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+Error=> Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2".
+Answer=> #add to composer.json > config =>"platform-check": false, or composer install --ignore-platform-reqs
